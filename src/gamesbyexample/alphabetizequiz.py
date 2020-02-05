@@ -49,7 +49,7 @@ Press enter to start!
         response = input('> ').upper()
 
         # Check if the quiz's time is up:
-        if time.time() - 30 > startTime:
+        if time.time() - 60 > startTime:
             print("TIME'S UP!")
             break
 
