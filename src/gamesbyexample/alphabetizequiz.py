@@ -9,7 +9,7 @@ import random, time
 
 # Set up the constants:
 QUESTION_SIZE = 5  # Each question shows 5 letters to alphabetize.
-QUIZ_DURATION = 30  # The quiz lasts 30 seconds.
+QUIZ_DURATION = 60  # The quiz lasts 30 seconds.
 assert QUESTION_SIZE <= 26
 assert QUIZ_DURATION > 0
 
