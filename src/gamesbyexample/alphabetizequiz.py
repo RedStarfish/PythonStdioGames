@@ -36,6 +36,7 @@ Example:
     > mopqt    <-- The correct alphabetical order.
 
 Press enter to start!
+(You can also type 'quit' to leave midway)
     '''.format(QUIZ_DURATION))
     input()  # Let the player press Enter to start the game.
 
@@ -47,6 +48,10 @@ Press enter to start!
         print(' '.join(quizLetters))
         print()
         response = input('> ').upper()
+
+        #To quit midway
+        if response == 'QUIT':
+            break
 
         # Check if the quiz's time is up:
         if time.time() - 60 > startTime:
