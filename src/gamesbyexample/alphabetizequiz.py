@@ -9,7 +9,7 @@ import random, time
 
 # Set up the constants:
 QUESTION_SIZE = 6  # Each question shows 5 letters to alphabetize.
-QUIZ_DURATION = 60  # The quiz lasts 30 seconds.
+QUIZ_DURATION = 60  # The quiz lasts 60 seconds.
 assert QUESTION_SIZE <= 26
 assert QUIZ_DURATION > 0
 
@@ -58,7 +58,7 @@ Press enter to start!
             print('    Correct!\n')
             numCorrect += 1  # Increase the score by 1.
         else:
-            print('    Ack. :(\n')
+            print('    Oops!Wrong response. :(\n')
         # At this point, go back to the start of the main game loop.
 
     # After the loop exits, the quiz is over. Show the final score:
